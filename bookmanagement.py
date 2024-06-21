@@ -2,7 +2,6 @@
 #
 #
 #
-#
 inventory = []
 
 def book_add(inventory, title, author, price):
@@ -23,3 +22,20 @@ def book_list():
         print(f"Buch{i+1}: {inventory[i]}")
 
 book_list()
+
+def book_search(inventory, title):
+    pass
+    try:
+        book = inventory[0][title]
+    except:
+        pass
+
+
+
+book_search(inventory, "Mathe für Dummies")
+
+def book_filter_price(inventory, max_price):
+    pass
+
+def book_total_value(inventory):
+    pass
